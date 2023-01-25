@@ -20,6 +20,7 @@ h2 {
 }
 small {
   line-height: 54px;
+  font-size: 18px;
 }
 
 footer {
@@ -54,15 +55,10 @@ footer {
   border: none;
 }
 
-.day {
+.date {
   font-size: 12px;
   opacity: 0.7;
 }
 .time {
   font-size: 36px;
-}
-.noon {
-  font-size: 18px;
-
-  line-height: 54px;
 }
