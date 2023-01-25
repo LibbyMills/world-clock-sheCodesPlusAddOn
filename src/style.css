@@ -14,6 +14,10 @@ select {
   font-size: 16px;
   margin-bottom: 10px;
 }
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
 small {
   line-height: 54px;
 }
@@ -22,7 +26,7 @@ footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
 }
-.card {
+.container {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -30,6 +34,8 @@ footer {
   width: 500px;
   padding: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  border-radius: 10px;
 }
 .world-map {
   width: 80px;
@@ -37,8 +43,15 @@ footer {
   display: inline;
 }
 .city {
-  font-size: 28px;
-  border-bottom: 1px, dashed, rgba(0, 0, 0, 0.4);
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border: none;
 }
 
 .day {
