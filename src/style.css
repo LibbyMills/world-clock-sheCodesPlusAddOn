@@ -1,16 +1,55 @@
+body {
+  background-color: #f1e3d6;
+  font-family: sans-serif;
+}
+
 h1 {
-  text-align: center;
+  font-weight: bold;
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+small {
+  line-height: 54px;
 }
 
 footer {
   text-align: center;
+  color: rgba(0, 0, 0, 0.6);
 }
 .card {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 500px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+.world-map {
+  width: 80px;
+  float: right;
+  display: inline;
+}
+.city {
+  font-size: 28px;
+  border-bottom: 1px, dashed, rgba(0, 0, 0, 0.4);
+}
+
 .day {
-  font-size: 8px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.time {
+  font-size: 36px;
+}
+.noon {
+  font-size: 18px;
+
+  line-height: 54px;
 }
