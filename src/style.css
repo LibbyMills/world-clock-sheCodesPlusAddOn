@@ -3,8 +3,8 @@ body {
   font-family: sans-serif;
 }
 
-h1 {
-  font-weight: bold;
+header {
+  height: 70px;
 }
 
 a {
@@ -49,10 +49,14 @@ footer {
   background-color: white;
   border-radius: 10px;
 }
+
+.title {
+  font-weight: bold;
+  font-size: 38px;
+}
 .world-map {
   width: 80px;
   float: right;
-  display: inline;
 }
 .city {
   display: flex;
