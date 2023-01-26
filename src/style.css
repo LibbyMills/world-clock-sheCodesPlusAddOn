@@ -6,6 +6,15 @@ body {
 h1 {
   font-weight: bold;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: unset;
+}
+
 select {
   display: block;
   width: 100%;
