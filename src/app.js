@@ -1,13 +1,23 @@
-function findTime(event) {
-  if (event.target.value.length > 0) {
-    let currentTime = moment()
-      .tz(event.target.value)
-      .format("dddd, MMMM, D, YYYY h:mm A");
-    alert(`It is ${currentTime} in ${event.target.value}`);
-  }
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `<div class="city">
+  <div>
+    <h2>${cityName}</h2>
+    <div class="date">${cityTime.format("MMMM, D, YYYY")}</div>
+  </div>
+  <div class="time">
+    ${cityTime.format("h:mm:ss [<small>]A[</small>]")}<small></small>
+  </div>
+</div>`;
+  console.log(cityTimeZone);
+  console.log(cityTime.format("h:mm:ss [<small>]A[</small>]"));
+  console.log(cityTime.format("MMMM, D, YYYY"));
 }
 
-let citySelector = document.querySelector("#cities");
+let citySelector = document.querySelector("#city");
 function updateTime() {
   // Los Angeles
   let losAngelesElement = document.querySelector("#los-angeles");
@@ -34,4 +44,4 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
-citySelector.addEventListener("change", findTime);
+citySelector.addEventListener("change", updateCity);
